@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cirket score</title>
+</head>
+<body>
+    <thead>
+
+       <b> <th>
+            cirket score
+           </th></b>
+    </thead>
+    <br>
+    
+    <tbody>
+        
+    
+            <tr>
+                waseem
+            </tr>
+            
+            <td>
+                <tr> babr </tr>
+        
+            </td>
+            
+            <td>
+                <tr>shaheen</tr>
+        
+            </td>
+            
+           <td>
+            <tr>fakhar</tr>
+           </td>
+        
+           
+    </tbody>
+
+</body>
+</html>
+
+
+<!-- Dockerfile> -->
+
+FROM python:3.12  // #OS +Python Installed
+
+LABEL maintainer="Lahore_class"
+
+WORK / code 
+
+COPY . / code/ 
+
+RUN pip install poetry 
+
+Run poetry  config virtualenvs.create false
+
+
+run poetry install
+
+
+cmd 
+ docker build(bulid bnany ke lea) -f Dockerfile -t lahoreclass . 
